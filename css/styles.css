@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "hero hero hero"
+        "leyenda leyenda leyenda"
+        "services services services"
+        "services services services"
+        "call call call"
+        "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:0.05fr 0.2fr 0.3fr 0.5fr 0.5fr 0.4fr 0.4fr;
+
+}
+
+h2 {
+    font-size: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 0 3rem;
+    justify-content: space-between;
+    align-self: start;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    
+    
+}
+
+.header__nav {
+
+    text-align: end;
+    padding-right: 1rem;
+}
+
+
+
+.header__nav ul li {
+    margin-left: 2rem;
+    display: inline-block;
+   
+}
+
+.header__nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+}
+
+.header__nav ul li a:hover {
+    color: rgb(48, 157, 190);
+    text-decoration: underline;
+}
+
+.header__logo {
+    padding: 20px;
+}
+
+.hero {
+    grid-area: hero;
+    background-image: url("../img/dentista1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    padding: 16rem 4rem;
+    
+}
+
+.hero__section {
+    padding-left: 6rem;
+    padding-top: 4rem;
+    
+}
+
+.hero__title {
+    font-size: 50px;
+}
+
+.hero__text {
+    padding: 0.8rem 0;
+    
+}
+
+.hero__btn {
+    outline:none;
+    border: none;
+    background-color: #1e83d6;
+    padding: 0.6rem 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.leyenda {
+    grid-area: leyenda;
+    background-color: white;
+    padding:40px 60px;
+    text-align: center;
+}
+
+.leyenda__icono {
+    padding-bottom: 2rem;
+}
+
+.leyenda__text {
+    font-size: 20px;
+}
+
+.services {
+    grid-area: services;
+    width: auto;
+    position: relative;
+    padding: 4em 3em;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #1e83d6;
+}
+
+.services .serviceBox {
+    position: relative;
+    width: 350px;
+    height: 280px;
+    background: #51446e;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.services .serviceBox .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.10s;
+}
+
+.services .serviceBox:hover .icon {
+    top: 30px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition-delay: 0s;
+    
+}
+
+.services .serviceBox .icon i{
+    font-size: 5em;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+    transition-delay: 0.10s;
+    
+}
+
+.services .serviceBox:hover .icon i {
+    font-size: 2em;
+    transition-delay: 0s;
+}
+
+
+
+.services .serviceBox .serviceBox_content {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.services .serviceBox:hover .serviceBox_content {
+    transform: scale(0.9);
+    transition-delay: 0.10s;
+}
+
+.services .serviceBox .serviceBox_content h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.services .serviceBox .serviceBox_content p {
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.services .serviceBox .serviceBox_content a {
+    text-decoration: none;
+    color: aqua;
+    
+}
+
+.c2a {
+    grid-area: call;
+    background-color:white;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 3fr auto 3fr;
+   
+    
+}
+
+.c2a__container {
+    padding: 5rem;
+    font-size: 17px;
+    display: flex;
+    
+}
+
+.c2a__float {
+    position: relative;
+    left: 14rem;
+    top: 10rem;
+
+}
+
+.c2a__container p {
+    background-color: aqua;
+    width:430px;
+    height: 273.05px;
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: #1e83d6;
+    padding: 2.4rem 4rem 6rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+}
+
+.footer__logo {
+    padding-bottom: 1rem;
+}
+
+.footer__clm2, .footer__clm3, .footer__clm4 {
+    margin-top:  1rem; 
+}
+
+footer h3 {
+    color: white;
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+
+.footer__clm2 ul {
+    line-height: 3rem;
+}
+
+.footer__clm2 ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+/*------------------
+Responsive Grid Media Queries - 1280, 1024, 768, 480
+    1280 - 1024     - Desktop (default grid)
+    1024 - 768      - Tablet Landscape
+    768 - 480       - Tablet
+    480 - less      - Phone landscape & smaller
+--------------------*/
+
+
+/*Vista Mobile*/
+

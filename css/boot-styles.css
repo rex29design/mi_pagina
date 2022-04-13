@@ -1,0 +1,27 @@
+
+.banner {
+    background-color: blueviolet;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.banner a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.team {
+    background-color: aqua;
+    
+    margin: 0;
+    width: 200px;
+    
+}
+
+.team_container {
+    background-color: rgb(236, 236, 236);
+    justify-content: center;
+    padding: 50px 0;
+    gap: 20px;
+}
+
