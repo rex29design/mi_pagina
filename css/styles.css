@@ -6,21 +6,7 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-areas: 
-        "header header header"
-        "hero hero hero"
-        "leyenda leyenda leyenda"
-        "services services services"
-        "services services services"
-        "call call call"
-        "footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:0.05fr 0.2fr 0.3fr 0.5fr 0.5fr 0.4fr 0.4fr;
 
-}
 
 h2 {
     font-size: 40px;
@@ -80,34 +66,16 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    width: auto;
     padding: 16rem 4rem;
     
 }
 
-.hero__section {
-    padding-left: 6rem;
-    padding-top: 4rem;
-    
-}
 
-.hero__title {
-    font-size: 50px;
-}
 
-.hero__text {
-    padding: 0.8rem 0;
-    
-}
 
 .hero__btn {
-    outline:none;
+    background-color: #1db144;
     border: none;
-    background-color: #1e83d6;
-    padding: 0.6rem 1rem;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
 }
 
 .leyenda {
@@ -125,8 +93,61 @@ header {
     font-size: 20px;
 }
 
+.bannerArea {
+    background-color: #1e83d6;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.bannerArea h1 {
+    color: white;
+}
+
+.bannerArea a{
+    text-decoration: none;
+    color: white;
+}
+
+.bannerArea a:hover {
+    opacity: 90%;
+}
+
+.equipoArea {
+    padding: 50px 0;
+}
+
+.equipoArea article {
+    background-color: #1e83d6;
+}
+
+.bannerContainer {
+    background:url(/img/dentista-paciente.jpg) no-repeat center center / cover;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.bannerContainer::before {
+    background: rgba(0, 0, 0, 0.46);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.banner-cta {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.banner-cta-text {
+    padding: 0 20rem;
+}
+
 .services {
-    grid-area: services;
+   
     width: auto;
     position: relative;
     padding: 4em 3em;
@@ -255,12 +276,12 @@ header {
 }
 
 footer {
-    grid-area: footer;
+    
     background-color: #1e83d6;
-    padding: 2.4rem 4rem 6rem 4rem;
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    padding-bottom: 5rem;
+    
 }
+
 
 .footer__logo {
     padding-bottom: 1rem;
@@ -276,14 +297,20 @@ footer h3 {
     padding-bottom: 1rem;
 }
 
+.siteMap ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
 .footer__clm2 ul {
     line-height: 3rem;
 }
 
-.footer__clm2 ul li a{
-    text-decoration: none;
-    color: aliceblue;
+.copyright {
+    text-align: center;
 }
+
 
 
 /*------------------

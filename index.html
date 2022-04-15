@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultorio Dental</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="/img/dental-care.png">
     <script src="https://kit.fontawesome.com/085843f0ef.js" crossorigin="anonymous"></script>
     <!--BOOTSTRAP CSS-->
@@ -13,31 +13,34 @@
 </head>
 <body>
     <!--HEADER-->
-    <header class="header">
-        <img class="header__logo" src="./img/logo.png" width="180px" alt="logo">
-        <nav class="header__nav">
-            <ul id="mylinks">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="páginas/nuestro-equipo.html">Nuestro Equipo</a></li>
-                <li><a href="./páginas/servicios.html">Servicios</a></li>
-                <li><a href="./páginas/contacto.html">Contacto</a></li>
-                <li><a href="./páginas/iniciar-sesion.html">Iniciar Sesión</a></li>
-            </ul>
-        </nav>
+    <header class="header navbar navbar-expand-lg navbar-light bg-light">
+        <div class="sticky container-fluid">
+            <img class="navbar-brand" src="/img/logo.png" alt="LogoIpsum" width="150px">
+            <nav>
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                   <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.html">Inicio</a></li>
+                   <li class="nav-item"><a class="nav-link" href="/páginas/nuestro-equipo.html">Nuestro Equipo</a></li>
+                   <li class="nav-item"><a class="nav-link" href="/páginas/servicios.html">Servicios</a></li>
+                   <li class="nav-item"><a class="nav-link" href="/páginas/contacto.html">Contacto</a></li>
+                   <li class="nav-item"><a class="nav-link" href="/páginas/iniciar-sesion.html">Iniciar Sesión</a></li>
+               </ul>
+            </nav>
+        </div>
+    </header>
 
     </header>
 
     <!--HERO SECTION-->
     <main class="hero">
-        <section class="hero__section">
+        <section class="container">
             <h1 class="hero__title">Lorem Ipsum</h1>
             <p class="lead" >Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Nam, perspiciatis.</p>
-            <button class="hero__btn">Contáctanos</button>
+            <button type="button" id="hero__btn" class="btn btn-primary btn-lg">Contáctanos</button>
         </section>
     </main>
 
     <!--LEYENDA-->
-    <div class="leyenda">
+    <div class="leyenda container">
         <img class="leyenda__icono" src="./img/tooth-whitening.png" width="100px" alt="">
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quae?</p>
     </div>
