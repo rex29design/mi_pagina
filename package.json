@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch scss/styles.scss css/stylenvo.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

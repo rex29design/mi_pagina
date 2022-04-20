@@ -1,97 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-
-h2 {
-    font-size: 40px;
-}
-
-ul {
-    list-style: none;
-}
-
-header {
-    grid-area: header;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    padding: 0 3rem;
-    justify-content: space-between;
-    align-self: start;
-    position: sticky;
-    top: 0;
-    z-index: 4;
-    
-    
-}
-
-.header__nav {
-
-    text-align: end;
-    padding-right: 1rem;
-}
-
-
-
-.header__nav ul li {
-    margin-left: 2rem;
-    display: inline-block;
-   
-}
-
-.header__nav ul li a {
-    text-decoration: none;
-    color: rgb(10, 10, 10);
-}
-
-.header__nav ul li a:hover {
-    color: rgb(48, 157, 190);
-    text-decoration: underline;
-}
-
-.header__logo {
-    padding: 20px;
-}
-
-.hero {
-    grid-area: hero;
-    background-image: url("../img/dentista1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    padding: 16rem 4rem;
-    
-}
-
-
-
-
-.hero__btn {
-    background-color: #1db144;
-    border: none;
-}
-
-.leyenda {
-    grid-area: leyenda;
-    background-color: white;
-    padding:40px 60px;
-    text-align: center;
-}
-
-.leyenda__icono {
-    padding-bottom: 2rem;
-}
-
-.leyenda__text {
-    font-size: 20px;
-}
+/* BANNER SECCIÓN*/
 
 .bannerArea {
     background-color: #1e83d6;
@@ -111,6 +18,8 @@ header {
 .bannerArea a:hover {
     opacity: 90%;
 }
+
+/* EQUIPO SECCIÓN*/
 
 .equipoArea {
     padding: 50px 0;
@@ -145,6 +54,9 @@ header {
 .banner-cta-text {
     padding: 0 20rem;
 }
+
+
+/* SERVICIOS SECCIÓN*/
 
 .services {
    
@@ -243,83 +155,3 @@ header {
     color: aqua;
     
 }
-
-.c2a {
-    grid-area: call;
-    background-color:white;
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 3fr auto 3fr;
-   
-    
-}
-
-.c2a__container {
-    padding: 5rem;
-    font-size: 17px;
-    display: flex;
-    
-}
-
-.c2a__float {
-    position: relative;
-    left: 14rem;
-    top: 10rem;
-
-}
-
-.c2a__container p {
-    background-color: aqua;
-    width:430px;
-    height: 273.05px;
-
-}
-
-footer {
-    
-    background-color: #1e83d6;
-    padding-bottom: 5rem;
-    
-}
-
-
-.footer__logo {
-    padding-bottom: 1rem;
-}
-
-.footer__clm2, .footer__clm3, .footer__clm4 {
-    margin-top:  1rem; 
-}
-
-footer h3 {
-    color: white;
-    font-size: 25px;
-    padding-bottom: 1rem;
-}
-
-.siteMap ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-
-.footer__clm2 ul {
-    line-height: 3rem;
-}
-
-.copyright {
-    text-align: center;
-}
-
-
-
-/*------------------
-Responsive Grid Media Queries - 1280, 1024, 768, 480
-    1280 - 1024     - Desktop (default grid)
-    1024 - 768      - Tablet Landscape
-    768 - 480       - Tablet
-    480 - less      - Phone landscape & smaller
---------------------*/
-
-
-/*Vista Mobile*/

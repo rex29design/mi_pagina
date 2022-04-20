@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestro Equipo</title>
-    <link rel="stylesheet" href="/mi_pagina/css/styles.css">
+    <link rel="stylesheet" href="/mi_pagina/css/styles2.css">
     <link rel="icon" href="/mi_pagina/img/dental-care.png">
     <script src="https://kit.fontawesome.com/085843f0ef.js" crossorigin="anonymous"></script>
     <!--BOOTSTRAP CSS-->
@@ -13,20 +13,30 @@
 </head>
 <body>
   <!--HEADER-->
-     <header class="header navbar navbar-expand-lg navbar-light bg-light">
-         <div class="sticky container-fluid">
+  <header>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+         <div class="container">
              <img class="navbar-brand" src="/mi_pagina/img/logo.png" alt="LogoIpsum" width="150px">
-             <nav>
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="/mi_pagina/index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/mi_pagina/páginas/nuestro-equipo.html">Nuestro Equipo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/mi_pagina/páginas/servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/mi_pagina/páginas/contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/mi_pagina/páginas/iniciar-sesion.html">Iniciar Sesión</a></li>
+             <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+             <div class="collapse navbar-collapse align-self-end" id="navbarNav">
+                 <ul class="navbar-nav">
+                     <li class="nav-item active">
+                         <a href="/mi_pagina/index.html" class="nav-link">Inicio</a>
+                    </li>
+                     <li class="nav-item active">
+                         <a href="/mi_pagina/páginas/nuestro-equipo.html" class="nav-link active">Nosotros</a>
+                     </li>
+                     <li class="nav-item active">
+                         <a href="/mi_pagina/páginas/servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="/mi_pagina/páginas/contacto.html" class="nav-link">Contacto</a>
+                   </li>
                 </ul>
-             </nav>
+             </div>
          </div>
-     </header>
+     </nav>
+</header>
     <!--BANNER SECCION-->
     <section class="bannerArea container-fluid">
         <div class="container-title">
@@ -77,37 +87,65 @@
         </div>
     </section>
      <!--FOOTER-->
-     <footer class="mt-5 pt-5 pb-10 footer">
+     <footer class="bg-primary text-white pt-5 pb-4">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="/mi_pagina/img/logo-white.png" alt="Logo Footer" width="170px">
-                    <br>
-                    <p>Vivamus ut massa urna.</p>
-                    <p>Tel. 558-360-9611</p>
+            <div class="row text-center">
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <img src="/mi_pagina/img/logo-white.png" width="220px" alt="logoipsum">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, provident esse! Provident commodi.</p>
                 </div>
-                <div class="siteMap col-lg-3">
-                    <h3>Contenido</h3>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="nuestro-equipo.html">Nuestro Equipo</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
+
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Sitemap</h5>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Inicio</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Nosotros</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Servicios</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration: none;">Contacto</a>
+                    </p>
                 </div>
-                <div class="col-lg-3">
-                    <h3>Nuestras Redes</h3>
-                    <a href="https://www.google.com"><img src="/mi_pagina/img/facebook.png" alt="Facebook" ></a>
-                
-                    <a href="https://www.google.com"><img src="/mi_pagina/img/twitter.png" alt="Twitter" ></a>
+
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Contacto</h5>
+                    <p>
+                        <i class="fa-solid fa-envelope mr-3"></i> contacto@dentista.com
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-location-dot mr-3"></i> Calle Keas 69 Col. Lorem 15234, México.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone mr-3"></i> Tel. 55 409 229 78
+                    </p>
+
                 </div>
-                <div class="col-lg-3">
-                    <h3>Aceptamos</h3>
-                    <a href="iniciar-sesion.html">PayPal</a>
-                </div>
-                <span></span>
+
             </div>
-            <div class="copyright row">Copyright 2022, Lorem ipsum.</div>
+         <hr class="mb-4">
+        <div class="row align-items-center">
+         <div class="col-md-7 col-lg-8">
+              <p>Copyright 2022 Todos los derechos reservados.</p>
+        </div>
+
+         <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 20px;"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                         <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 20px;"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+
+                    </ul>
+               </div>
+         </div>
+     </div>
     </footer>
     <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
