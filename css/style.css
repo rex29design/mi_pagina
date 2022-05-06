@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/*CONDICIONALES*/
+/*Mi constante*/
+/* BANNER SECCIÓN*/
+.bannerArea {
+  background-color: #1e83d6;
+  text-align: center;
+  padding: 80px 0;
+}
+.bannerArea h1 {
+  color: white;
+}
+.bannerArea a {
+  text-decoration: none;
+  color: white;
+}
+.bannerArea a:hover {
+  opacity: 90%;
+}
+
+.bannerContainer {
+  background: url(/mi_pagina/img/dentista-paciente.jpg) no-repeat center center/cover;
+  padding: 5rem 0;
+  position: relative;
+}
+.bannerContainer::before {
+  background: rgba(0, 0, 0, 0.46);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.banner-cta {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.banner-cta-text {
+  padding: 0 20rem;
+}
+
+/* EQUIPO SECCIÓN*/
+.equipoArea {
+  padding: 50px 0;
+}
+.equipoArea article {
+  background-color: #1e83d6;
+}
+
+/*EACH*/
+.icon-dentistry1 {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.icon-dentistry2 {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.icon-dentistry3 {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+/*ACCORDION SECTION*/
+.faq-accordion .accordion {
+  list-style-type: none;
+  counter-reset: css-counter 0;
+  padding: 10px;
+  background-color: white;
+}
+.faq-accordion .accordion .accordion-item {
+  border: 0;
+  border-radius: 0;
+  counter-increment: css-counter 1;
+  position: relative;
+  z-index: 1;
+}
+.faq-accordion .accordion .accordion-item :first-of-type {
+  padding-top: 0;
+}
+.faq-accordion .accordion .accordion-item ::before {
+  position: absolute;
+  left: 25px;
+  top: 0;
+  content: "";
+  border: 1px dashed #d4d4d5;
+  width: 1px;
+  height: 100%;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+.faq-accordion .accordion .accordion-item .accordion-header {
+  font-size: inherit;
+  line-height: inherit;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+}
+.faq-accordion .accordion .accordion-item .accordion-header .accordion-button {
+  padding-left: 100px;
+  font-size: 20px;
+  font-weight: 600;
+  overflow: hidden;
+}
+.faq-accordion .accordion .accordion-item .accordion-header h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.faq-accordion .accordion .accordion-item .accordion-body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: gray;
+  padding-left: 60px;
+}
+
+/*MIXINS*/
+/*VARIABLES*/
+/*MAPAS*/
+/*BUCLE*/
+.service-1 {
+  background: var(--i);
+}
+
+.service-2 {
+  background: var(--i);
+}
+
+.service-3 {
+  background: var(--i);
+}
+
+.service-4 {
+  background: var(--i);
+}
+
+.service-5 {
+  background: var(--i);
+}
+
+.service-6 {
+  background: var(--i);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* SERVICIOS SECCIÓN*/
+.services {
+  width: auto;
+  position: relative;
+  padding: 4em 3em;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #1e83d6;
+}
+.services .serviceBox {
+  position: relative;
+  width: 350px;
+  height: 280px;
+  background: #51446e;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.services .serviceBox:hover .icon {
+  top: 30px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition-delay: 0s;
+}
+.services .serviceBox:hover .icon i {
+  font-size: 2em;
+  transition-delay: 0s;
+}
+.services .serviceBox:hover .serviceBox_content {
+  transform: scale(0.9);
+  transition-delay: 0.1s;
+}
+.services .serviceBox .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  transition-delay: 0.1s;
+}
+.services .serviceBox .icon i {
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+}
+.services .serviceBox .serviceBox_content {
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+  z-index: 1;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.services .serviceBox .serviceBox_content h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.services .serviceBox .serviceBox_content p {
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.services .serviceBox .serviceBox_content a {
+  text-decoration: none;
+  color: aqua;
+}
+
+/*# sourceMappingURL=style.css.map */

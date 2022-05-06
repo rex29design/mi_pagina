@@ -1,11 +1,10 @@
 {
-  "name": "root",
+  "name": "Consultorio Dental",
   "version": "1.0.0",
-  "description": "",
+  "description": "Consultorio dental ubicado en México, especializado en tu salud dental.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "sass --watch scss/styles.scss css/stylenvo.css"
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
   },
   "keywords": [],
   "author": "",

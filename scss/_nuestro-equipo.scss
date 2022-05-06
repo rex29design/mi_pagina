@@ -1,0 +1,61 @@
+
+/*CONDICIONALES*/
+$snow: blanco; /*Mi constante*/
+
+/* BANNER SECCIÓN*/
+.bannerArea {
+    background-color:#1e83d6;
+    text-align: center;
+    padding: 80px 0;
+    
+    h1 {
+        @if $snow ==blanco{
+         color: white;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+
+        :hover {
+            opacity: 90%;
+        }
+    }
+}
+
+.bannerContainer {
+    background:url(/mi_pagina/img/dentista-paciente.jpg) no-repeat center center / cover;
+    padding: 5rem 0;
+    position: relative;
+
+    ::before {
+        background: rgba(0, 0, 0, 0.46);
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.banner-cta {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.banner-cta-text {
+    padding: 0 20rem;
+}
+
+/* EQUIPO SECCIÓN*/
+
+.equipoArea {
+    padding: 50px 0;
+
+    article {
+        background-color: #1e83d6;
+    }
+}
