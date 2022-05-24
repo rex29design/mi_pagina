@@ -14,7 +14,7 @@
   text-decoration: none;
   color: white;
 }
-.bannerArea a:hover {
+.bannerArea a :hover {
   opacity: 90%;
 }
 
@@ -84,7 +84,7 @@
 .faq-accordion .accordion .accordion-item :first-of-type {
   padding-top: 0;
 }
-.faq-accordion .accordion .accordion-item ::before {
+.faq-accordion .accordion .accordion-item::before {
   position: absolute;
   left: 25px;
   top: 0;
